@@ -44,6 +44,6 @@ def update(frame):
 ani = FuncAnimation(fig, update, frames=timesteps, repeat=False)
 
 # Save the animation as a gif
-ani.save('equi_animation.gif', writer='pillow', fps=10)
+ani.save('equi_30lapses_animation.gif', writer='pillow', fps=10)
 
 # plt.show()   # If you want live preview
