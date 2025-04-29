@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
 
 # Load CSV data
-df = pd.read_csv("D:/SOFTWARE_PROJECT/Sweet_16/The_N-body_Problem/The_Barnes-Hut_Approach/visual/output.csv")
+df = pd.read_csv("D:/SOFTWARE_PROJECT/Sweet_16/The_N-body_Problem/The_Barnes-Hut_Approach/build/equi.csv")
 timesteps = sorted(df["time"].unique())
 
 # Setup figure and 3D axes
@@ -44,6 +44,6 @@ def update(frame):
 ani = FuncAnimation(fig, update, frames=timesteps, repeat=False)
 
 # Save the animation as a gif
-ani.save('animation.gif', writer='pillow', fps=10)
+ani.save('equi_animation.gif', writer='pillow', fps=10)
 
 # plt.show()   # If you want live preview
